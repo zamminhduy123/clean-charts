@@ -1,0 +1,10 @@
+{
+  "name": "clean-charts",
+  "version": "1.0.0",
+  "description": "Clean, publication-ready benchmark and comparison charts in the style of AI model-launch posts (Google/DeepMind Gemini blogs) with Python + matplotlib: bars, pass@k stacks, cost-vs-quality, scatter, pie, doughnut, area, radar, slides.",
+  "author": { "name": "zamminhduy123", "url": "https://github.com/zamminhduy123" },
+  "homepage": "https://github.com/zamminhduy123/clean-charts",
+  "repository": "https://github.com/zamminhduy123/clean-charts",
+  "license": "MIT",
+  "keywords": ["charts", "matplotlib", "data-visualization", "benchmark", "llm-evals", "google-style", "gemini", "plotting", "python", "agent-skills"]
+}

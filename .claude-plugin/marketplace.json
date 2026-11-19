@@ -1,0 +1,14 @@
+{
+  "name": "clean-charts",
+  "owner": { "name": "zamminhduy123", "url": "https://github.com/zamminhduy123" },
+  "description": "Skill for clean benchmark charts in the style of AI model-launch posts.",
+  "plugins": [
+    {
+      "name": "clean-charts",
+      "source": "./",
+      "description": "Clean, publication-ready benchmark and comparison charts (bars, pass@k, cost-vs-quality, scatter, pie, doughnut, area, radar, slides) with Python + matplotlib.",
+      "category": "data-visualization",
+      "keywords": ["charts", "matplotlib", "data-visualization", "benchmark", "llm-evals", "google-style"]
+    }
+  ]
+}

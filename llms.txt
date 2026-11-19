@@ -1,0 +1,21 @@
+# clean-charts
+
+> Agent Skill (Claude Code plugin, skills.sh) that draws clean, publication-ready benchmark and comparison charts with Python + matplotlib, in the style of AI model-launch posts (Google / DeepMind Gemini blogs): blue hero model, grey competitors, value labels, "Higher is better" subtitles, methodology footer.
+
+Install: `/plugin install clean-charts --marketplace zamminhduy123/clean-charts` (Claude Code) or `npx skills add zamminhduy123/clean-charts` (any Agent Skills client).
+
+## Docs
+- [SKILL.md](https://github.com/zamminhduy123/clean-charts/blob/main/skills/clean-charts/SKILL.md): style rules, workflow, chart archetypes, gotchas
+- [README](https://github.com/zamminhduy123/clean-charts/blob/main/README.md): install, gallery, FAQ
+
+## Code
+- [gstyle.py](https://github.com/zamminhduy123/clean-charts/blob/main/skills/clean-charts/scripts/gstyle.py): palette, style_axes, header, footer, value_labels, pixel canvas, rounded bar/hbar, pill
+- [install_font.py](https://github.com/zamminhduy123/clean-charts/blob/main/skills/clean-charts/scripts/install_font.py): installs Google Sans (OFL) as static weights for matplotlib
+
+## Examples
+- [exploitgym.py](https://github.com/zamminhduy123/clean-charts/blob/main/skills/clean-charts/examples/exploitgym.py): outlined single-metric bar chart (most common)
+- [gray_swan.py](https://github.com/zamminhduy123/clean-charts/blob/main/skills/clean-charts/examples/gray_swan.py): stacked pass@k / k-attempt bars
+- [aa_index.py](https://github.com/zamminhduy123/clean-charts/blob/main/skills/clean-charts/examples/aa_index.py): cost vs. quality lines with effort labels
+- [mka_eval.py](https://github.com/zamminhduy123/clean-charts/blob/main/skills/clean-charts/examples/mka_eval.py): slide with headline and two metric cards
+- [deep_think.py](https://github.com/zamminhduy123/clean-charts/blob/main/skills/clean-charts/examples/deep_think.py): multi-panel rounded bars on a slide
+- [more_types.py](https://github.com/zamminhduy123/clean-charts/blob/main/skills/clean-charts/examples/more_types.py): pie, doughnut, area, scatter + Pareto frontier, radar

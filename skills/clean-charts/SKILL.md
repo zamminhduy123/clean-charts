@@ -1,9 +1,14 @@
 ---
 name: clean-charts
-description: Draw charts in the Google / DeepMind model-launch style (Gemini blog posts, model cards, eval methodology pages) with Python + matplotlib. Use whenever the user wants a plot that "looks like Google's", wants to recreate or clone a chart from a Google/DeepMind/Gemini screenshot, or asks for clean benchmark-comparison charts (model vs. model scores, cost-vs-quality, attack success rate, pass@k, "higher is better" bar charts) for a launch post, slide, paper or README — even if they don't say "Google" but show a chart in that look (Google Sans, blue hero bars, grey competitors, value labels on top, methodology footer).
+description: Draw clean, publication-ready benchmark and comparison charts in the style of AI model-launch posts (Google / DeepMind Gemini blogs, model cards) with Python + matplotlib - bar charts, stacked pass@k bars, cost-vs-quality lines, scatter with Pareto frontier, pie, doughnut, area, radar and slide layouts. Use whenever the user wants a chart that "looks like Google's", wants to recreate or clone a chart from a screenshot, or asks for clean model-vs-model benchmark charts (scores, cost per task, attack success rate, "higher is better") for a launch post, slide deck, paper or README - even if they never say "Google" but show a chart in that look (Google Sans, blue hero bars, grey competitors, value labels on top, methodology footer).
+license: MIT
+compatibility: Python 3 with matplotlib; fonttools only for the optional Google Sans install.
+metadata:
+  version: "1.0.0"
+  repository: https://github.com/zamminhduy123/clean-charts
 ---
 
-# Google-style charts
+# Clean charts (model-launch style)
 
 Google's launch charts look consistent because they follow a small, strict grammar. Learn the grammar, reuse the helpers in `scripts/gstyle.py`, start from the closest worked example in `examples/`, render, look at the PNG, fix, repeat.
 
