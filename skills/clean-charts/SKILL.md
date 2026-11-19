@@ -49,7 +49,7 @@ Each `.py` has a matching `.png` to show what "done" looks like. Look at it befo
 
 **Typography** is Google Sans throughout, in sentence case, never all-caps.
 - Title: Medium (500), centred. Subtitle on the line below in regular `INK2`/`MUTED`, written as `Metric • Setting • Higher is better` with a bullet `•` separator. On slides, a muted eyebrow line sits above a large Medium headline that states the claim ("X delivers frontier quality at much lower cost").
-- Value labels sit above bars in `INK2`, with the format matching the source (`41%`, `51.26%`, `$5.63`). On borderless slide bars they are Medium weight.
+- Value labels sit above bars in `INK2`, with the format matching the source (`41%`, `51.26%`, or dollars with cents). On borderless slide bars they are Medium weight.
 - Model names go under bars, wrapped onto two lines at the family/version split (`Gemini 4\nNeon`, `Claude\nOpus 5.5`), in `INK`. An optional third muted line carries the harness or setting (`Claude Code`, `6h`, `No time cap`).
 - The footer reads `Methodology: deepmind.google/models/evals-methodology/<model>` (or the user's own source) in small `INK2`/`FAINT`. It is centred under axes charts and left-aligned on slides.
 
@@ -67,7 +67,7 @@ Each `.py` has a matching `.png` to show what "done" looks like. Look at it befo
 
 ## Gotchas (each one cost a re-render)
 
-- `$` in labels triggers mathtext ("$4 / $20" renders as "4/20"). `setup()` sets `text.parse_math=False`; keep it.
+- A dollar sign in labels triggers mathtext: two of them in one label (a price range) render as math with the signs dropped. `setup()` sets `text.parse_math=False`; keep it.
 - `bar()` gets square bottoms by painting a mask in `bg` under the baseline. Pass the real background colour, or a stripe appears.
 - Long tick labels plus a muted third line plus the footer compete for vertical space. Leave about 0.19 of the figure height under the axes and check the render.
 - Matplotlib cannot use variable-font weights. Use the static files from `install_font.py`.
